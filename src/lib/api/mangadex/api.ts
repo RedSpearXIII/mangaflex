@@ -30,8 +30,8 @@ const getReleases = async (page: number) => {
   searchParams.append('order[updatedAt]', 'desc');
   searchParams.append('contentRating[]', 'safe');
   searchParams.append('contentRating[]', 'suggestive');
-  searchParams.append('availableTranslatedLanguage[]', 'pt-br');
-  searchParams.append('availableTranslatedLanguage[]', 'pt');
+  searchParams.append('availableTranslatedLanguage[]', 'ar');
+  searchParams.append('availableTranslatedLanguage[]', 'ar');
   searchParams.append('hasAvailableChapters', 'true');
   searchParams.append('limit', '30');
   if (page > 1) {
