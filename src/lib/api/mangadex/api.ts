@@ -145,8 +145,8 @@ const getChapters = async (id: string, page: number = 0) => {
   const url = new URL(`/manga/${id}/feed`, BASE_URL);
   const searchParams = url.searchParams;
 
-  searchParams.append('translatedLanguage[]', 'pt-br');
-  searchParams.append('translatedLanguage[]', 'pt');
+  searchParams.append('translatedLanguage[]', 'ar');
+  searchParams.append('translatedLanguage[]', 'ar');
 
   searchParams.append('limit', '96');
   searchParams.append('offset', '0');
@@ -313,8 +313,8 @@ const getMostRead = async () => {
   searchParams.append('order[rating]', 'desc');
   searchParams.append('contentRating[]', 'safe');
   searchParams.append('contentRating[]', 'suggestive');
-  searchParams.append('availableTranslatedLanguage[]', 'pt-br');
-  searchParams.append('availableTranslatedLanguage[]', 'pt');
+  searchParams.append('availableTranslatedLanguage[]', 'ar');
+  searchParams.append('availableTranslatedLanguage[]', 'ar');
   searchParams.append('hasAvailableChapters', 'true');
 
   const response = await fetch(url, requestOptions);
